@@ -9,7 +9,7 @@ class String
     hour_angle = 0
     end
     minute_angle = (time[1].to_f()).*(6)
-    angle = (hour_angle.-(minute_angle)).abs()
+    angle = (hour_angle.-(minute_angle)).abs().floor()
     angle
   end
 end
